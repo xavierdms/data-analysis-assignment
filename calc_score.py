@@ -28,7 +28,7 @@ if __name__ == '__main__':
                 for col in range(6,33):
                     if row[col] == answers[col]:
                         cur_score = cur_score + 1
-                row.append(cur_score)
+                row.append(round(cur_score/27*100,2))
             csv_writer.writerow(row)
         
             
